@@ -57,19 +57,17 @@ function save1(){
   
 }
 
+let countEl2 = document.getElementById("count-el2")
+console.log(countEl2)
 
-function calcularTotal() {
-    let total = count + count1
-    document.getElementById("total-el").textContent = total
+let count2 = 0
+function increment2(){
+    count2 = count2 + 1
+    countEl2.textContent = count2
 }
 
-// let countEl2 = document.getElementById("count-el2")
-
-// function total(){
-// total1= count + count1
-// let countStr = total1
-// }
-
-
-
+function  restar2(){
+    count2 = count2 - 1
+    countEl2.textContent = count2
+}
 
