@@ -5,8 +5,14 @@ console.log(countEl)
 let count = 0
 
 function increment(){
-    count = count + 1
-    countEl.textContent = count
+    if (count2 < 100) {
+        count = count + 1
+        countEl.textContent = count
+    }
+    else {
+        alert('La etacion esta llena')
+    }
+    
     
 }
 
@@ -35,11 +41,17 @@ console.log(countEl1)
 let count1 = 0
 
 function increment1(){
+    if (count2 <= 0){
+        alert('A quien vas a sacar de la estacion si esta vacía')
+    }
+   else{
     count1 = count1 + 1
     countEl1.textContent = count1
+   }
 }
 
 function restar1(){
+    
     if (count1 > 0) {
         count1 = count1 - 1
         countEl1.textContent = count1
@@ -57,17 +69,31 @@ function save1(){
   
 }
 
+
+
 let countEl2 = document.getElementById("count-el2")
 console.log(countEl2)
 
 let count2 = 0
 function increment2(){
-    count2 = count2 + 1
-    countEl2.textContent = count2
+    if (count2 < 100){
+        count2 = count2 + 1
+        countEl2.textContent = count2
+    }
+    else{
+        alert('No hay mas capacidad en la estación')
+    }
+  
 }
 
 function  restar2(){
-    count2 = count2 - 1
-    countEl2.textContent = count2
+
+   if (count2 > 0) {
+        count2 = count2 - 1
+        countEl2.textContent = count2
+    }
+    else{
+        alert('No puede haber personas en negativo')
+    }
 }
 
